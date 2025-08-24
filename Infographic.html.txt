@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI Career Navigator: Your 2025 Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #FF4E50, #FC913A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight gradient-text">The AI Career Navigator</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-4 max-w-3xl mx-auto">Your 2025 guide to building a high-impact career in the world of Artificial Intelligence.</p>
+        </header>
+
+        <section id="intro-stats" class="my-16">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="stat-card">
+                    <h2 class="text-2xl font-bold text-gray-500">Median ML Engineer Salary (2024)</h2>
+                    <p class="text-7xl font-extrabold text-[#FF4E50] mt-2">$260,000</p>
+                    <p class="text-gray-600 mt-4">The high demand for specialized AI expertise translates directly into significant financial compensation, placing AI roles at the pinnacle of the tech industry.</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="text-2xl font-bold text-gray-500">GenAI Business Impact</h2>
+                    <p class="text-7xl font-extrabold text-[#FC913A]">2.5x</p>
+                    <p class="text-gray-600 mt-4">Firms leveraging generative AI are achieving 2.5 times higher revenue growth, showcasing AI's power to augment human capability and drive productivity.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="job-market" class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">The 2025 AI Job Market Landscape</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">The AI job market is rapidly evolving, with a clear emphasis on specialized engineering roles and diversification across industries beyond traditional tech.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">The Premier League of AI Roles</h3>
+                    <p class="text-sm text-gray-600 text-center mb-6">Hiring data reveals a strong preference for professionals who can build, deploy, and specialize AI systems, with engineering roles leading the charge.</p>
+                    <div class="chart-container h-96 md:h-[450px]">
+                        <canvas id="topRolesChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Industry Diversification of AI Talent</h3>
+                     <p class="text-sm text-gray-600 text-center mb-6">AI is no longer a niche technology. Its transformative power is creating high demand for talent in healthcare, consulting, finance, and beyond.</p>
+                    <div class="chart-container h-96 md:h-[450px]">
+                        <canvas id="industryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-paradox" class="my-16 bg-white rounded-lg shadow-md p-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold">Navigating the "Experience Paradox"</h2>
+                <p class="text-gray-600 mt-2 max-w-3xl mx-auto">The market is booming, yet entry points are narrowing. There's a pronounced shift towards senior talent, making portfolio and project experience more critical than ever.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <div class="border-r-0 md:border-r-2 border-dashed border-gray-300 pr-4">
+                    <h3 class="text-2xl font-bold text-red-500">The Squeeze on Traditional Roles</h3>
+                    <p class="text-5xl font-extrabold my-4">↓ 60%</p>
+                    <p class="text-gray-600">Postings for roles like Android and Java developers have seen a sharp decline since early 2020, as the market shifts towards AI-centric skills.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-green-500">The Rise of Seniority</h3>
+                    <p class="text-5xl font-extrabold my-4">5+ Years</p>
+                    <p class="text-gray-600">The vast majority of AI opportunities now explicitly require five or more years of experience, prioritizing candidates who can deliver immediate value.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill-stack" class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Your Essential AI Skill Stack</h2>
+                <p class="text-gray-600 mt-2">Success in AI requires a blend of deep technical knowledge, foundational math, and the soft skills that drive real-world impact.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-[#FF4E50]">💻 Core Technical</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li><strong>Python & R:</strong> The languages of AI.</li>
+                        <li><strong>ML/DL:</strong> Supervised, Unsupervised, Reinforcement.</li>
+                        <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Keras.</li>
+                        <li><strong>Data Management:</strong> SQL, Spark, Hadoop.</li>
+                        <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-[#FC913A]">🧠 Foundational Math</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li><strong>Linear Algebra:</strong> The mathematics of data.</li>
+                        <li><strong>Calculus:</strong> The engine of model optimization.</li>
+                        <li><strong>Probability & Statistics:</strong> The framework for uncertainty.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-[#F9D423]">🤝 Workplace Skills</h3>
+                    <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                        <li><strong>Problem-Solving:</strong> Bridge business and tech.</li>
+                        <li><strong>Communication:</strong> Explain complexity simply.</li>
+                        <li><strong>Collaboration:</strong> AI is a team sport.</li>
+                        <li><strong>Industry Knowledge:</strong> Context is king.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Building Your High-Impact Portfolio</h2>
+                <p class="text-gray-600 mt-2">Your portfolio is the ultimate proof of your ability. It's not just code; it's a story of how you solve problems.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center w-full md:w-1/4">
+                    <div class="text-4xl mb-2">1️⃣</div>
+                    <h3 class="text-xl font-bold">Select Projects</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Choose unique, real-world problems covering NLP, Computer Vision, and Predictive Analytics.</p>
+                </div>
+                <div class="text-2xl font-bold text-gray-400">→</div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center w-full md:w-1/4">
+                    <div class="text-4xl mb-2">2️⃣</div>
+                    <h3 class="text-xl font-bold">Document Meticulously</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Craft detailed READMEs explaining the problem, methodology, and results. Use Jupyter Notebooks.</p>
+                </div>
+                 <div class="text-2xl font-bold text-gray-400">→</div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center w-full md:w-1/4">
+                    <div class="text-4xl mb-2">3️⃣</div>
+                    <h3 class="text-xl font-bold">Present Professionally</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Create a personal website to showcase your work as case studies. Link to GitHub and live demos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="core-concepts" class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Demystifying AI: The Core Four</h2>
+                <p class="text-gray-600 mt-2">Understanding the fundamental pillars of AI is key to navigating the field.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="stat-card">
+                    <h3 class="text-xl font-bold text-[#FF4E50]">Machine Learning</h3>
+                    <p class="text-5xl my-4">🧠</p>
+                    <p class="text-gray-600 text-sm">The art of learning from data. Computers find patterns without being explicitly programmed. Think Netflix recommendations.</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="text-xl font-bold text-[#FC913A]">Natural Language Processing</h3>
+                    <p class="text-5xl my-4">🗣️</p>
+                    <p class="text-gray-600 text-sm">Bridging the human-machine language gap. AI that understands and generates human language. Think Siri or Alexa.</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="text-xl font-bold text-[#F9D423]">Computer Vision</h3>
+                    <p class="text-5xl my-4">👁️</p>
+                    <p class="text-gray-600 text-sm">Enabling machines to "see". AI that interprets visual information from images and videos. Think self-driving cars.</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="text-xl font-bold text-teal-500">Generative AI</h3>
+                    <p class="text-5xl my-4">✨</p>
+                    <p class="text-gray-600 text-sm">The dawn of machine creativity. AI that creates new content like text, images, and code. Think ChatGPT.</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="text-center my-12">
+            <p class="text-gray-500">&copy; 2025 AI Career Navigator. All data synthesized for illustrative purposes.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const colors = {
+            red: '#FF4E50',
+            orange: '#FC913A',
+            yellow: '#F9D423',
+            lightGreen: '#E1F5C4',
+            teal: '#43C6AC',
+            blue: '#19A6D2'
+        };
+
+        const topRolesData = {
+            labels: ['Machine Learning Engineer', 'Senior Machine Learning Engineer', 'Data Scientist', 'Generative AI Engineer', 'Computer Vision Engineer', 'AI/ML Specialist'].map(label => wrapLabel(label, 16)),
+            datasets: [{
+                label: 'Relative Demand',
+                data: [100, 92, 85, 78, 75, 70],
+                backgroundColor: [colors.red, colors.orange, colors.yellow, colors.teal, colors.blue, '#F8B195'],
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        };
+
+        new Chart(document.getElementById('topRolesChart'), {
+            type: 'bar',
+            data: topRolesData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                           display: false
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: false
+                        },
+                         ticks: {
+                            font: {
+                                size: 12,
+                                weight: '600'
+                            },
+                            color: '#374151'
+                        }
+                    }
+                }
+            }
+        });
+
+        const industryData = {
+            labels: ['Technology & Software', 'Healthcare', 'Management Consulting', 'Financial Services', 'Research & Staffing', 'Other'],
+            datasets: [{
+                label: 'AI Talent Distribution',
+                data: [45, 18, 15, 12, 6, 4],
+                backgroundColor: [colors.red, colors.orange, colors.yellow, colors.teal, colors.blue, '#F8B195'],
+                hoverOffset: 4
+            }]
+        };
+
+        new Chart(document.getElementById('industryChart'), {
+            type: 'doughnut',
+            data: industryData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                             font: {
+                                size: 12,
+                                weight: '600'
+                            },
+                            color: '#374151'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
